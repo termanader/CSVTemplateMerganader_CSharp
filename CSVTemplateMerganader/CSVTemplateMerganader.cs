@@ -62,7 +62,7 @@ namespace CSVTemplateMerganader
             varHeaderBox.Items.Clear();      
             for (int i = 0; i < ColumnCount; i++)
             {
-                varHeaderBox.Items.Add("<<" + listVariables[i] + ">>");
+                varHeaderBox.Items.Add("{{#" + listVariables[i] + "}}");
             }
             }
 
@@ -102,21 +102,23 @@ namespace CSVTemplateMerganader
                 StatusLabel.Text = "Running for: ";
                 for (int l = 0; l < rowCount; l++)
                 {
-                    //List<string> arRow = new List<string>();
-                    //string[] arRow = new string[rowCount];
+                    List<string> arRow = new List<string>();
+                    string[] rowItems = new string[rowCount];
                     //arRow[l] = Convert.ToString(csvTable.Rows[l].);
                     int rowLength = csvTable.Columns.Count - 1;
                     arMedia.Add(media);
                     media = temp;
                     foreach (var row in csvTable.Rows)
                     {
-                        
+                       // var arRow = row.ToString();
+                        //var tmp = row;
+                       // tmp.ToList();
                         for (int r = 0; r < varUsedCount - 1; r++)
                         {
                             //arRow = Convert.ToString(csvTable.Rows[r]);
                             //arRow.ToString;
 
-                            media = media.Replace(listVariables[varUsedIndex[r]], row[varUsedIndex[r]]);
+                            //media = media.Replace(listVariables[varUsedIndex[r]], row[varUsedIndex[r]]);
                         }
 
 
