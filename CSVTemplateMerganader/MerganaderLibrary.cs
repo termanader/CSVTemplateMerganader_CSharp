@@ -18,7 +18,7 @@ namespace CSVTemplateMerganader
     public partial class MerganaderLibrary
     {
 
-        private static DataTable GetDataTabelFromCSVFile(string csvName)
+        private static DataTable GetDataTableFromCSVFile(string csvName)
         {
             DataTable csvData = new DataTable();
             TextFieldParser csvReader = new TextFieldParser(csvName);
@@ -46,9 +46,27 @@ namespace CSVTemplateMerganader
                 csvData.Rows.Add(fieldData);
             }
 
-
+            csvReader.Dispose();
             return csvData;
 
         }
+
+        private static List<string> GetColumnHeaders(string csvName)
+        {
+            List<string> listHeaders = new List<string>();
+            DataTable csvData = new DataTable();
+            TextFieldParser csvReader = new TextFieldParser(csvName);
+            csvReader.Delimiters = new string[] { "," };
+            //read column names
+            csvReader.HasFieldsEnclosedInQuotes = true;
+            string[] colFields = csvReader.ReadFields();
+            foreach (string column in colFields)
+            {
+                listHeaders.Add(column);
+            }
+            return listHeaders;
+        }
+
+
     }
 }

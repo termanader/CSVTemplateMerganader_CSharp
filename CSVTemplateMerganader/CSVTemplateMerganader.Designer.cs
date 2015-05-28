@@ -41,6 +41,7 @@
             this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.csvDataGrid)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -53,6 +54,7 @@
             this.varHeaderBox.Name = "varHeaderBox";
             this.varHeaderBox.Size = new System.Drawing.Size(125, 134);
             this.varHeaderBox.TabIndex = 0;
+            this.varHeaderBox.SelectedIndexChanged += new System.EventHandler(this.varHeaderBox_DoubleClick);
             // 
             // genresButton
             // 
@@ -62,6 +64,7 @@
             this.genresButton.TabIndex = 1;
             this.genresButton.Text = "Generate";
             this.genresButton.UseVisualStyleBackColor = true;
+            this.genresButton.Click += new System.EventHandler(this.genresButton_Click);
             // 
             // csvDataGrid
             // 
@@ -90,12 +93,14 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.StatusLabel});
+            this.StatusLabel,
+            this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 560);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(544, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
             // 
             // StatusLabel
             // 
@@ -146,7 +151,12 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
-            // Merganader
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+            // 
+            // MerganaderLibrary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -160,7 +170,7 @@
             this.Controls.Add(this.varHeaderBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Merganader";
+            this.Name = "MerganaderLibrary";
             this.Text = "CSV Template Merganader";
             ((System.ComponentModel.ISupportInitialize)(this.csvDataGrid)).EndInit();
             this.statusStrip1.ResumeLayout(false);
@@ -192,6 +202,7 @@
         private System.Windows.Forms.ToolStripMenuItem dataCSVToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 

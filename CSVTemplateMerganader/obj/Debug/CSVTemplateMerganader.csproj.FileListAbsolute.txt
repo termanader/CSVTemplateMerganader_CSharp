@@ -7,3 +7,12 @@ C:\Users\nadera\Documents\Visual Studio 2013\Projects\CSVTemplateMerganader\CSVT
 C:\Users\nadera\Documents\Visual Studio 2013\Projects\CSVTemplateMerganader\CSVTemplateMerganader\bin\Debug\CSVTemplateMerganader.pdb
 C:\Users\nadera\Documents\Visual Studio 2013\Projects\CSVTemplateMerganader\CSVTemplateMerganader\obj\Debug\CSVTemplateMerganader.exe
 C:\Users\nadera\Documents\Visual Studio 2013\Projects\CSVTemplateMerganader\CSVTemplateMerganader\obj\Debug\CSVTemplateMerganader.pdb
+C:\Users\Austin Nader\Documents\Visual Studio 2015\Projects\CSVTemplateMerganader_CSharp\CSVTemplateMerganader\bin\Debug\CSVTemplateMerganader.exe.config
+C:\Users\Austin Nader\Documents\Visual Studio 2015\Projects\CSVTemplateMerganader_CSharp\CSVTemplateMerganader\obj\Debug\CSVTemplateMerganader.exe
+C:\Users\Austin Nader\Documents\Visual Studio 2015\Projects\CSVTemplateMerganader_CSharp\CSVTemplateMerganader\obj\Debug\CSVTemplateMerganader.pdb
+C:\Users\Austin Nader\Documents\Visual Studio 2015\Projects\CSVTemplateMerganader_CSharp\CSVTemplateMerganader\bin\Debug\CSVTemplateMerganader.exe
+C:\Users\Austin Nader\Documents\Visual Studio 2015\Projects\CSVTemplateMerganader_CSharp\CSVTemplateMerganader\bin\Debug\CSVTemplateMerganader.pdb
+C:\Users\Austin Nader\Documents\Visual Studio 2015\Projects\CSVTemplateMerganader_CSharp\CSVTemplateMerganader\obj\Debug\CSVTemplateMerganader.csprojResolveAssemblyReference.cache
+C:\Users\Austin Nader\Documents\Visual Studio 2015\Projects\CSVTemplateMerganader_CSharp\CSVTemplateMerganader\obj\Debug\CSVTemplateMerganader.MerganaderLibrary.resources
+C:\Users\Austin Nader\Documents\Visual Studio 2015\Projects\CSVTemplateMerganader_CSharp\CSVTemplateMerganader\obj\Debug\CSVTemplateMerganader.Properties.Resources.resources
+C:\Users\Austin Nader\Documents\Visual Studio 2015\Projects\CSVTemplateMerganader_CSharp\CSVTemplateMerganader\obj\Debug\CSVTemplateMerganader.csproj.GenerateResource.Cache
